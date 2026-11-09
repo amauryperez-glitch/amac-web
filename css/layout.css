@@ -125,3 +125,43 @@
   display: inline-block;
   padding: 0.625rem 0;
 }
+
+@media (min-width: 768px) {
+
+  .encabezado .contenedor {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo menu ayuda";
+    gap: var(--espacio-l);
+  }
+
+  .menu {
+    justify-content: flex-end;
+    gap: var(--espacio-l);
+  }
+
+  .logo-sub {
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .ayuda-numero {
+    display: inline;
+  }
+
+  .rejilla-campos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .listado {
+    grid-template-columns: 280px 1fr;
+    align-items: start;
+  }
+}
