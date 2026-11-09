@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Work+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="index.html">AMAC <span class="logo-sub">Bolsa de trabajo</span></a>
+      <nav class="menu">
+        <a class="activo" href="index.html">Vacantes</a>
+        <a href="mis-solicitudes.html">Mis solicitudes</a>
+        <a href="empresa-vacantes.html">Para empresas</a>
+        <a href="login.html">Iniciar sesión</a>
+      </nav>
+      <a class="boton boton--oscuro boton--chico boton-ayuda" href="tel:8100000000">Ayuda<span class="ayuda-numero">: 81 0000 0000</span></a>
+    </div>
+  </header>
+
+  <main id="principal" class="principal">
+    <div class="contenedor">
+      <div class="encabezado-pagina">
+        <h1>Encuentra tu próximo empleo</h1>
+        <p class="subtitulo">Si necesitas ayuda, llama al 81 0000 0000 y te atendemos.</p>
+      </div>
+
+      <form class="buscador campo" action="index.html">
+        <label for="buscar">Buscar empleo</label>
+        <input type="text" id="buscar" name="buscar" placeholder="Puesto, empresa o ubicación">
+        <button class="boton boton--primario" type="submit">Buscar</button>
+      </form>
+
+      <div class="listado">
+        <aside class="filtros">
+          <h2>Filtros</h2>
+          <form action="index.html">
+            <fieldset class="grupo">
+              <legend>Horario</legend>
+              <label class="opcion"><input type="checkbox" name="horario" value="completo"> Tiempo completo</label>
+              <label class="opcion"><input type="checkbox" name="horario" value="medio"> Medio tiempo</label>
+              <label class="opcion"><input type="checkbox" name="horario" value="fines"> Fines de semana</label>
+            </fieldset>
+            <fieldset class="grupo">
+              <legend>Categoría</legend>
+              <label class="opcion"><input type="checkbox" name="categoria" value="ventas"> Ventas</label>
+              <label class="opcion"><input type="checkbox" name="categoria" value="administracion"> Administración</label>
+              <label class="opcion"><input type="checkbox" name="categoria" value="almacen"> Almacén</label>
+              <label class="opcion"><input type="checkbox" name="categoria" value="atencion"> Atención al cliente</label>
+              <label class="opcion"><input type="checkbox" name="categoria" value="limpieza"> Limpieza</label>
+            </fieldset>
+            <div class="acciones">
+              <button class="boton boton--secundario" type="submit">Aplicar filtros</button>
+            </div>
+          </form>
+        </aside>
+
+        <section class="lista-tarjetas">
+          <h2>6 vacantes disponibles</h2>
+
+          <article class="tarjeta">
+            <h3>Cajero</h3>
+            <p class="tarjeta-empresa">OXXO</p>
+            <p><strong>Sueldo: $8,000 al mes</strong></p>
+            <p>Ubicación: Monterrey<br>Horario: Tiempo completo</p>
+            <p>Atender a clientes en caja y dar cambio.</p>
+            <div class="acciones-fila">
+              <a class="boton boton--secundario" href="vacante.html">Ver más</a>
+              <a class="boton boton--primario" href="vacante.html">Postularme</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Auxiliar de almacén</h3>
+            <p class="tarjeta-empresa">Grupo Comercial del Norte</p>
+            <p><strong>Sueldo: $9,500 al mes</strong></p>
+            <p>Ubicación: Guadalupe<br>Horario: Medio tiempo</p>
+            <p>Llevar el control del inventario.</p>
+            <div class="acciones-fila">
+              <a class="boton boton--secundario" href="vacante.html">Ver más</a>
+              <a class="boton boton--primario" href="vacante.html">Postularme</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Recepcionista</h3>
+            <p class="tarjeta-empresa">Clínica San José</p>
+            <p><strong>Sueldo: $7,000 al mes</strong></p>
+            <p>Ubicación: San Nicolás<br>Horario: Medio tiempo</p>
+            <p>Recibir a pacientes y agendar citas.</p>
+            <div class="acciones-fila">
+              <a class="boton boton--secundario" href="vacante.html">Ver más</a>
+              <a class="boton boton--primario" href="vacante.html">Postularme</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Empacador</h3>
+            <p class="tarjeta-empresa">Soriana</p>
+            <p><strong>Sueldo: $6,500 al mes</strong></p>
+            <p>Ubicación: San Pedro<br>Horario: Fines de semana</p>
+            <p>Empacar la compra de los clientes.</p>
+            <div class="acciones-fila">
+              <a class="boton boton--secundario" href="vacante.html">Ver más</a>
+              <a class="boton boton--primario" href="vacante.html">Postularme</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Asesor de ventas</h3>
+            <p class="tarjeta-empresa">Liverpool</p>
+            <p><strong>Sueldo: $9,000 al mes</strong></p>
+            <p>Ubicación: Monterrey<br>Horario: Tiempo completo</p>
+            <p>Orientar a los clientes en la tienda.</p>
+            <div class="acciones-fila">
+              <a class="boton boton--secundario" href="vacante.html">Ver más</a>
+              <a class="boton boton--primario" href="vacante.html">Postularme</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Encargado de turno</h3>
+            <p class="tarjeta-empresa">Farmacias Benavides</p>
+            <p><strong>Sueldo: $10,000 al mes</strong></p>
+            <p>Ubicación: Apodaca<br>Horario: Tiempo completo</p>
+            <p>Organizar al equipo y abrir la tienda.</p>
+            <div class="acciones-fila">
+              <a class="boton boton--secundario" href="vacante.html">Ver más</a>
+              <a class="boton boton--primario" href="vacante.html">Postularme</a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p class="pie-marca">AMAC</p>
+      <p>asociAMayores A.C. · Bolsa de trabajo para personas adultas mayores.</p>
+      <p>¿Necesitas ayuda? Llámanos al <a href="tel:8100000000">81 0000 0000</a>.</p>
+      <div class="pie-enlaces">
+        <a href="index.html">Vacantes</a>
+        <a href="registro-candidato.html">Crear cuenta</a>
+        <a href="login.html">Iniciar sesión</a>
+        <a href="empresa-vacantes.html">Para empresas</a>
+      </div>
+      <p>&copy; 2026 AMAC</p>
+    </div>
+  </footer>
+</body>
+</html>
 
