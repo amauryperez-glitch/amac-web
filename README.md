@@ -41,7 +41,7 @@ Celular:
 
 Escritorio:
 
-![index en escritorio](img/index-escritorio.png)
+![index en escritorio](img/index-escritorio.webp)
 
 Lighthouse:
 
