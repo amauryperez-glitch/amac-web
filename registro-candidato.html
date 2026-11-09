@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta de candidato | AMAC</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Work+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
 
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="index.html">AMAC <span class="logo-sub">Bolsa de trabajo</span></a>
+      <nav class="menu">
+        <a href="index.html">Vacantes</a>
+        <a href="mis-solicitudes.html">Mis solicitudes</a>
+        <a href="empresa-vacantes.html">Para empresas</a>
+        <a href="login.html">Iniciar sesión</a>
+      </nav>
+      <a class="boton boton--oscuro boton--chico boton-ayuda" href="tel:8100000000">Ayuda<span class="ayuda-numero">: 81 0000 0000</span></a>
+    </div>
+  </header>
+
+  <main id="principal" class="principal">
+    <div class="contenedor contenedor-angosto">
+      <h1>Crear cuenta de candidato</h1>
+      <p class="subtitulo">Llena tus datos. Los campos con * son obligatorios.</p>
+
+      <form action="login.html">
+        <fieldset>
+          <legend>1. ¿Cómo te contactamos?</legend>
+          <p>Escribe tu correo, tu celular o los dos.</p>
+          <div class="rejilla-campos">
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+            </div>
+            <div class="campo">
+              <label for="celular">Teléfono celular</label>
+              <input type="tel" id="celular" name="celular" placeholder="10 dígitos">
+            </div>
+          </div>
+          <fieldset class="grupo">
+            <legend>Si escribes los dos, ¿cuál prefieres?</legend>
+            <label class="opcion"><input type="radio" name="preferencia" value="celular" checked> Teléfono celular</label>
+            <label class="opcion"><input type="radio" name="preferencia" value="correo"> Correo electrónico</label>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Tus datos</legend>
+          <div class="rejilla-campos">
+            <div class="campo">
+              <label for="nombre">Nombre(s) *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: María" required>
+            </div>
+            <div class="campo">
+              <label for="apellido-paterno">Apellido paterno *</label>
+              <input type="text" id="apellido-paterno" name="apellido-paterno" placeholder="Ejemplo: López" required>
+            </div>
+            <div class="campo">
+              <label for="apellido-materno">Apellido materno</label>
+              <input type="text" id="apellido-materno" name="apellido-materno" placeholder="Ejemplo: Hernández">
+            </div>
+            <div class="campo">
+              <label for="edad">Edad *</label>
+              <input type="number" id="edad" name="edad" placeholder="Ejemplo: 65" min="50" max="110" required>
+            </div>
+            <div class="campo">
+              <label for="sexo">Sexo *</label>
+              <select id="sexo" name="sexo" required>
+                <option value="">Selecciona una opción</option>
+                <option>Mujer</option>
+                <option>Hombre</option>
+                <option>Prefiero no decir</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="estudios">Máximo nivel de estudios *</label>
+              <select id="estudios" name="estudios" required>
+                <option value="">Selecciona una opción</option>
+                <option>Primaria</option>
+                <option>Secundaria</option>
+                <option>Preparatoria</option>
+                <option>Licenciatura</option>
+                <option>Posgrado</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Tu dirección</legend>
+          <div class="rejilla-campos">
+            <div class="campo">
+              <label for="calle">Calle y número *</label>
+              <input type="text" id="calle" name="calle" placeholder="Ejemplo: Hidalgo 120" required>
+            </div>
+            <div class="campo">
+              <label for="colonia">Colonia *</label>
+              <input type="text" id="colonia" name="colonia" placeholder="Ejemplo: Centro" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. Experiencia y habilidades</legend>
+          <div class="rejilla-campos">
+            <div class="campo">
+              <label for="experiencia">Experiencia laboral</label>
+              <input type="text" id="experiencia" name="experiencia" placeholder="Ejemplo: 15 años como cajera">
+            </div>
+            <div class="campo">
+              <label for="habilidades">Habilidades</label>
+              <input type="text" id="habilidades" name="habilidades" placeholder="Ejemplo: atención al cliente">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>5. Contraseña</legend>
+          <div class="rejilla-campos">
+            <div class="campo">
+              <label for="contrasena">Contraseña *</label>
+              <input type="password" id="contrasena" name="contrasena" placeholder="Mínimo 8 caracteres" minlength="8" required>
+            </div>
+            <div class="campo">
+              <label for="contrasena-repetir">Repite tu contraseña *</label>
+              <input type="password" id="contrasena-repetir" name="contrasena-repetir" placeholder="Escríbela otra vez" minlength="8" required>
+            </div>
+          </div>
+          <label class="opcion"><input type="checkbox" name="terminos" required> Acepto términos y condiciones</label>
+          <label class="opcion"><input type="checkbox" name="privacidad" required> Acepto el aviso de privacidad</label>
+        </fieldset>
+
+        <div class="acciones">
+          <button class="boton boton--primario" type="submit">Crear mi cuenta</button>
+        </div>
+        <p class="seccion">AMAC revisará tu registro. Mientras tanto puedes ver vacantes, pero todavía no postularte.</p>
+        <a class="enlace-volver" href="login.html">¿Ya tienes cuenta? Inicia sesión</a>
+      </form>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p class="pie-marca">AMAC</p>
+      <p>asociAMayores A.C. · Bolsa de trabajo para personas adultas mayores.</p>
+      <p>¿Necesitas ayuda? Llámanos al <a href="tel:8100000000">81 0000 0000</a>.</p>
+      <div class="pie-enlaces">
+        <a href="index.html">Vacantes</a>
+        <a href="registro-candidato.html">Crear cuenta</a>
+        <a href="login.html">Iniciar sesión</a>
+        <a href="empresa-vacantes.html">Para empresas</a>
+      </div>
+      <p>&copy; 2026 AMAC</p>
+    </div>
+  </footer>
+</body>
+</html>
