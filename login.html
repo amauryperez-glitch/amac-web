@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión | AMAC</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Work+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
 
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="index.html">AMAC <span class="logo-sub">Bolsa de trabajo</span></a>
+      <nav class="menu">
+        <a href="index.html">Vacantes</a>
+        <a href="mis-solicitudes.html">Mis solicitudes</a>
+        <a href="empresa-vacantes.html">Para empresas</a>
+        <a class="activo" href="login.html">Iniciar sesión</a>
+      </nav>
+      <a class="boton boton--oscuro boton--chico boton-ayuda" href="tel:8100000000">Ayuda<span class="ayuda-numero">: 81 0000 0000</span></a>
+    </div>
+  </header>
+
+  <main id="principal" class="principal-azul">
+    <div class="contenedor contenedor-chico">
+      <div class="panel">
+        <h1>Iniciar sesión</h1>
+        <p class="subtitulo">Escribe tu correo y tu contraseña.</p>
+
+        <form action="index.html">
+          <div class="rejilla-campos">
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="campo">
+              <label for="contrasena">Contraseña</label>
+              <input type="password" id="contrasena" name="contrasena" placeholder="Escribe tu contraseña" required>
+            </div>
+          </div>
+          <div class="acciones">
+            <button class="boton boton--primario" type="submit">Entrar</button>
+          </div>
+        </form>
+
+        <h2 class="seccion">¿No tienes cuenta?</h2>
+        <div class="acciones">
+          <a class="boton boton--secundario" href="registro-candidato.html">Crear cuenta de candidato</a>
+          <a class="boton boton--secundario" href="empresa-vacantes.html">Registrar mi empresa</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p class="pie-marca">AMAC</p>
+      <p>asociAMayores A.C. · Bolsa de trabajo para personas adultas mayores.</p>
+      <p>¿Necesitas ayuda? Llámanos al <a href="tel:8100000000">81 0000 0000</a>.</p>
+      <div class="pie-enlaces">
+        <a href="index.html">Vacantes</a>
+        <a href="registro-candidato.html">Crear cuenta</a>
+        <a href="login.html">Iniciar sesión</a>
+        <a href="empresa-vacantes.html">Para empresas</a>
+      </div>
+      <p>&copy; 2026 AMAC</p>
+    </div>
+  </footer>
+</body>
+</html>
