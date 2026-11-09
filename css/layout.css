@@ -1,1 +1,167 @@
-$null 
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenedor-angosto {
+  max-width: 800px;
+}
+
+.contenedor-chico {
+  max-width: 500px;
+}
+
+.encabezado {
+  border-bottom: 3px solid var(--color-acento);
+  padding: var(--espacio-s) 0;
+}
+
+.encabezado .contenedor {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "logo ayuda"
+    "menu menu";
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.logo-sub, .ayuda-numero {
+  display: none;
+}
+
+.boton-ayuda {
+  grid-area: ayuda;
+}
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--espacio-m);
+}
+
+.menu a {
+  display: inline-block;
+  padding: 0.625rem 0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.menu a:hover, .menu .activo {
+  text-decoration: underline;
+  text-decoration-color: var(--color-acento);
+  text-decoration-thickness: 3px;
+}
+
+.principal {
+  padding: var(--espacio-l) 0 2.5rem 0;
+}
+
+.principal-azul {
+  background-color: var(--color-azul-claro);
+  padding: 3rem 0;
+}
+
+.subtitulo {
+  color: var(--color-texto-suave);
+}
+
+.encabezado-pagina {
+  margin-bottom: var(--espacio-l);
+}
+
+.seccion {
+  margin-top: var(--espacio-l);
+}
+
+.lista-tarjetas {
+  display: grid;
+  gap: var(--espacio-l);
+}
+
+.listado {
+  display: grid;
+  gap: var(--espacio-l);
+  margin-top: var(--espacio-l);
+}
+
+.rejilla-campos {
+  display: grid;
+  gap: var(--espacio-m);
+}
+
+.pie {
+  background-color: var(--color-primario);
+  color: #ffffff;
+  padding: var(--espacio-l) 0;
+}
+
+.pie a {
+  color: #ffffff;
+}
+
+.pie-marca {
+  font-weight: bold;
+  letter-spacing: 0.25em;
+}
+
+.pie-enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--espacio-l);
+}
+
+.pie-enlaces a {
+  display: inline-block;
+  padding: 0.625rem 0;
+}
+
+@media (min-width: 768px) {
+
+  .encabezado .contenedor {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo menu ayuda";
+    gap: var(--espacio-l);
+  }
+
+  .menu {
+    justify-content: flex-end;
+    gap: var(--espacio-l);
+  }
+
+  .logo-sub {
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .ayuda-numero {
+    display: inline;
+  }
+
+  .rejilla-campos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .listado {
+    grid-template-columns: 280px 1fr;
+    align-items: start;
+  }
+}
