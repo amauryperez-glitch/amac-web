@@ -1,1 +1,28 @@
-$null 
+:root {
+  --color-primario: #202945;      /* azul marino AMAC */
+  --color-acento: #ff815c;        /* coral AMAC */
+  --color-acento-oscuro: #f26a42;
+  --color-azul-claro: #cae4ef;
+  --color-durazno: #fddaad;
+  --color-texto: #202945;
+  --color-texto-suave: #4a5068;
+  --color-fondo: #ffffff;
+  --color-borde: #d5d8e0;
+  --color-verde: #15803d;
+  --color-verde-claro: #dcf5e3;
+  --color-rojo: #b91c1c;
+  --color-rojo-claro: #fde8e8;
+  --color-gris-claro: #e4e6eb;
+
+  --fuente-titulos: "Libre Baskerville", Georgia, serif;
+  --fuente-base: "Work Sans", Arial, sans-serif;
+  --texto-base: 1.125rem;   
+  --texto-h3: 1.25rem;
+  --texto-h2: 1.375rem;
+  --texto-h1: 1.75rem;
+
+  --espacio-s: 0.5rem;
+  --espacio-m: 1rem;
+  --espacio-l: 1.5rem;
+  --radio: 0.5rem;
+}
